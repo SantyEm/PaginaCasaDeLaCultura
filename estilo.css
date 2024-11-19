@@ -1,0 +1,367 @@
+/* Estilos para el encabezado */
+header {
+ background-color: #FFD69C; /* Cambia el color de fondo a #FFD69C */
+  padding: 20px; /* Espacio interno alrededor del bloque */
+  margin-bottom: 20px; /* Margen inferior entre los bloques */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al bloque */
+  text-align: center;
+}
+/* Estilos para la imagen "Gratitud.jpg" */
+.container-content img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen al ancho del contenedor */
+  max-height: 400px; /* Establece una altura máxima de 400 píxeles */
+  object-fit: cover; /* Ajusta la imagen para llenar el espacio manteniendo las proporciones */
+} 
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo h1 {
+  color: #009688;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilos para los enlaces del menú */
+  .menu {
+    background-color: #FFFBDE;
+    padding: 20px;
+  }
+
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu li {
+    position: relative;
+    margin: 0 10px;
+  }
+
+  .menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+    font-family: "Century Gothic", Arial, sans-serif; /* Agrega la fuente "Century Gothic" */
+  }
+
+  .menu a:hover {
+    border-bottom-color: #FFFBDE;
+  }
+
+  .menu a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFD69C;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+  }
+
+  .menu a:hover::before {
+    transform: scaleX(1);
+  }
+
+
+/* Estilos para la portada */
+.container-cover {
+  background-image: url("imagenes/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-info-cover h1 {
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Estilos para los títulos */
+h1 {
+  color: #009688;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: Oswald, Arial, sans-serif;
+}
+
+h2 {
+  color: #ffa000;
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #e91e63;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el artículo de contenido */
+article {
+  margin-bottom: 40px;
+}
+
+/* Estilos para la información de contacto */
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.image-info {
+  width: 40%;
+}
+
+.text-info {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.text-info p {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el mapa */
+iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+/* Estilos para la portada */
+.container-cover {
+  position: relative; /* Añadido para posicionar elementos secundarios */
+}
+
+.container-info-cover {
+  position: relative; /* Añadido para posicionar elementos secundarios */
+  z-index: 1; /* Añadido para que el texto aparezca por encima de la imagen de fondo */
+}
+
+.container-info-cover h1 {
+  color: #fff;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 20px;
+}
+
+.container-info-cover p {
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Añadido un fondo semitransparente */
+  z-index: 0; /* Añadido para que la superposición aparezca detrás del texto */
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-down a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  animation: scroll 2s infinite;
+}
+
+.scroll-down a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+}
+
+
+/* Estilos para los bloques de contenido */
+.container-content .content-block {
+  background-color: #FFD69C; /* Cambia el color de fondo a #FFD69C */
+  padding: 20px; /* Espacio interno alrededor del bloque */
+  margin-bottom: 20px; /* Margen inferior entre los bloques */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al bloque */
+}
+
+.imagen-destacada {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto; /* Aplica margen automático en los lados izquierdo y derecho */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #FFE9C9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos */
+.container-content .content-block h1,
+.container-content .content-block h2,
+.container-content .content-block h3 {
+  margin-top: 0; /* Elimina el margen superior predeterminado de los títulos */
+  font-family: "Arial Black", Arial, sans-serif;
+}
+
+/* Estilos para las imágenes dentro de los bloques de contenido */
+.container-content .content-block img {
+  display: block; /* Asegura que las imágenes se muestren como bloques separados */
+  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al ancho del contenedor */
+  margin-bottom: 10px; /* Margen inferior entre las imágenes */
+  background-color: #FFE9C9; /* Cambia el color de fondo a #FFE9C9 */
+  padding: 20px; /* Espacio interno alrededor de los bloques de contenido */
+  margin-bottom: 20px; /* Margen inferior entre los bloques de contenido */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al bloque */
+
+}
+
+.container-content {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: left;
+  color: #333; /* Color del texto */
+  background-color: #FFF; /* Color de fondo */
+}
+
+.container-content .content-block p {
+  font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.encabezado {
+    background-color: #FFD69C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 24px;
+  }
+  
+  h1.TituloEncabezado {
+    background-color: #FFFBDE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 24px;
+  }
+  
+  body {
+  background-color: #A67676;
+}
+.bibliografia {
+  font-family: "Century Gothic", Arial, sans-serif;
+  /* Otros estilos que desees aplicar */
+}
+
+.bibliografia a {
+  /* Estilos para el enlace dentro de la bibliografía */
+  /* Por ejemplo, puedes cambiar el color o agregar subrayado */
+  font-size: 16px;
+  color: black;
+  text-decoration: underline;
+}
+
+
+.ubicacion {
+  font-family: "Century Gothic", Arial, sans-serif;
+  /* Otros estilos que desees aplicar */
+}
+.ubicacion a {
+  font-size: 16px;
+  color: black;
+  text-decoration: underline;
+}
+
+/* Estilos para la sección de la imagen 360º */
+.fb-360-container {
+  background-color: #FFD69C; /* Cambia el color de fondo a #FFD69C */
+  padding: 20px; /* Espacio interno alrededor del bloque */
+  margin-bottom: 20px; /* Margen inferior entre los bloques */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al bloque */
+}
+
+/* En tu CSS */
+.fb-360-post-container {
+  text-align: center; /* Alinea el contenido al centro horizontal */
+  margin: 20px auto; /* Margen superior e inferior de 20px y margen automático en los lados */
+}
+
+.fb-360-post {
+  display: inline-block; /* Asegura que el contenedor sea solo tan ancho como su contenido */
+}
+
+/* En tu CSS */
+.fb-post-block {
+  background-color: #FFD69C;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.fb-post {
+  display: inline-block;
+}

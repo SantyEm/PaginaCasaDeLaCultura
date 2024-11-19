@@ -1,0 +1,219 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Century Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #A67676;
+}
+
+header {
+  background-color: #FFD69C;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+  font-family: "Century Gothic", Arial, sans-serif;
+}
+
+nav a:hover {
+  border-bottom-color: #FFFBDE;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFD69C;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Estilos para el botón de inicio en el encabezado */
+.logo a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.container-content {
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: left;
+  color: #333;
+  background-color: #FFF;
+}
+.logo a:hover {
+  background-color: #555;
+}
+
+h1 {
+  color: #009688;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: Oswald, Arial, sans-serif;
+}
+
+.container-cover {
+  background-image: url("imagenes/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-info-cover h1 {
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container-content .content-block {
+  background-color: #FFD69C;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-content .content-block h1,
+.container-content .content-block h2,
+.container-content .content-block h3 {
+  margin-top: 0;
+  font-family: "Arial Black", Arial, sans-serif;
+}
+
+.container-content .content-block img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 10px;
+  background-color: #FFE9C9;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #FFD69C;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.bibliografia a,
+.ubicacion a {
+  font-size: 16px;
+  color: black;
+}
+
+    .slide {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+
+   
+/* Estilos para la galería y transición de imágenes */
+.slider {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: none;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Estilos para los botones de navegación */
+.navigation-buttons {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prev,
+.next {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #555;
+}
+
+/* Agregar un estilo para resaltar el botón activo */
+.active-button {
+  background-color: #555;
+}

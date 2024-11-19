@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #A67676;
+}
+
+header {
+   background-image: linear-gradient(to bottom right, #FFD69C, #FFB85E);
+  padding: 10px;
+  text-align: center;
+}
+
+.logo a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tabs {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tab-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+footer {
+  background-color: #FFD69C;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.container-cover {
+  background-image: url("imagenes/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transiciones para el zoom y la saturación */
+ filter: grayscale(70%) saturate(80%); /* Aplica escala de grises y aumenta la saturación */
+}
+
+.container-cover:hover {
+  transform: scale(1.02); /* Efecto de zoom al 110% */
+  filter: grayscale(0%); /* Restaura la saturación de la imagen */
+}
+
+.container-info-cover h1 {
+  font-family: 'Cmontserrat', Arial, sans-serif; /* Cambia 'Your-Font-Name' por el nombre de la fuente que quieras usar */
+  font-size: 48px;
+  color: #FFF; /* Cambia el color del texto si lo deseas */
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 4px 4px 6px rgba(0, 0, 0, 0.3), 6px 6px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra al texto para resaltar */
+}
+
+/* Estilos para los botones de pestañas */
+.tab-button {
+  background-color: #FFFBDE;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: border-bottom-color 0.3s ease, background-color 0.3s ease;
+  font-family: "Century Gothic", Arial, sans-serif;
+}
+.tab-content {
+  background-image: radial-gradient(circle at center center, rgb(255,232,198),rgb(255,194,103));
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content img {
+   max-width: 100%; /* Ajusta el ancho máximo de las imágenes al ancho del contenedor */
+  margin-bottom: 10px; /* Margen inferior entre las imágenes */
+  background-color: #FFE9C9; /* Cambia el color de fondo a #FFE9C9 */
+  padding: 20px; /* Espacio interno alrededor de los bloques de contenido */
+  margin-bottom: 20px; /* Margen inferior entre los bloques de contenido */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al bloque */;
+}
+
+.tab-content p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.tab-content .content-block {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button:hover {
+  border-bottom-color: #FFFBDE;
+  background-color: #FFFBDE;
+}
+
+.tab-button::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFD69C;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.tab-button:hover::before {
+  transform: scaleX(1);
+}
+
+/* Estilos para los botones de pestañas en disposición horizontal */
+/* Estilos para los botones de pestañas */
+.tab-menu {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.tab-button {
+  background-color: #F39A8F;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Century Gothic", Arial, sans-serif;
+  margin: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #E74C3C;
+  transform: scale(1.05);
+	background-color: #FFFBDE;
+}
+
+.tab-button::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFD69C;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.tab-button:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* Estilos para los botones de navegación */
+.prev,
+.next {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #555;
+}
+
+/* Estilos para el encabezado */
+.header-content {
+    background-image: url("imagenes/EncabezadoGif2.gif");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+	background-color: rgba(255, 233, 201, 0.5); /* Fondo con baja opacidad */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.TituloEncabezado {
+  font-size: 24px;
+  margin-bottom: 10px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 4px 4px 6px rgba(0, 0, 0, 0.3), 6px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-destacada {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

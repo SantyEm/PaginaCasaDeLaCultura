@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="galeristetica.css">
+  <meta charset="UTF-8">
+  <title>Galería de dibujos</title>
+  <link rel="stylesheet" href="estilos.css">
+  
+   <script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      if (n >= slides.length) {
+        slideIndex = 0;
+      }
+      if (n < 0) {
+        slideIndex = slides.length - 1;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].style.opacity = 0; // Establecer opacidad a 0
+      }
+      slides[slideIndex].style.display = "block";
+      slides[slideIndex].style.opacity = 1; // Establecer opacidad a 1
+    }
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="casa cultura.html">Inicio</a> <!-- Cambia "casa_cultura.html" con la URL de tu página principal -->
+  </div>
+  <!-- ... otros elementos del encabezado ... -->
+</header>
+  <main>
+    <div class="image-slider">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide active">
+            <!-- Contenido del primer slide -->
+            <h2>FOTO 1</h2>
+            <img src="Galeria2/1.jpg" alt="Foto 1">
+            <div class="info">
+              <p>(breve descripción).</p>
+            </div>
+          </div>
+          <div class="slide">
+            <!-- Contenido del segundo slide -->
+            <h2>FOTO 2</h2>
+            <img src="Galeria2/2.jpg" alt="Foto 2">
+            <div class="info">
+              <p>(breve descripción).</p>
+            </div>
+          </div>
+		  <div class="slide">
+            <!-- Contenido del segundo slide -->
+            <h2>FOTO 3</h2>
+            <img src="Galeria2/3.jpg" alt="Foto 3">
+            <div class="info">
+              <p>(breve descripción).</p>
+            </div>
+          </div>
+		  <div class="slide">
+            <!-- Contenido del segundo slide -->
+            <h2>FOTO 4</h2>
+            <img src="Galeria2/4.jpg" alt="Foto 4">
+            <div class="info">
+              <p>(breve descripción).</p>
+            </div>
+          </div>
+		  <div class="slide">
+            <!-- Contenido del segundo slide -->
+            <h2>FOTO 5</h2>
+            <img src="Galeria2/5.jpg" alt="Foto 5">
+            <div class="info">
+              <p>(breve descripción).</p>
+            </div>
+          </div>
+		  <div class="slide">
+            <!-- Contenido del segundo slide -->
+            <h2>FOTO 6</h2>
+            <img src="Galeria2/6.jpg" alt="Foto 6">
+            <div class="info">
+              <p>(breve descripción).</p>
+            </div>
+          </div>
+		  <div class="slide">
+            <!-- Contenido del segundo slide -->
+            <h2>FOTO 7</h2>
+            <img src="Galeria2/7.jpg" alt="Foto 7">
+            <div class="info">
+              <p>(breve descripción).</p>
+            </div>
+          </div>
+          <!-- Agrega más slides para más imágenes -->
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">Anterior</a>
+        <a class="next" onclick="plusSlides(1)">Siguiente</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+
+
